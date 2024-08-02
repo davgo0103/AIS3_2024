@@ -1,1 +1,0 @@
-ERROR:capa:Input file 'wannacry\993d32b3cc9e59664ac57bbe91d5db25a100361bff1f44fea21a33147f98c755.exe' is not a valid PE file: 'Invalid NT Headers signature.'

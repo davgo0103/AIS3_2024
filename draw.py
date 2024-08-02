@@ -19,7 +19,7 @@ def load_similarity_and_features(similarity_file='similarity_matrix.npy', featur
     return similarity_matrix, features
 
 # 視覺化相似度
-def visualize_similarity_umap_with_clusters(similarity_matrix, features, n_clusters=6):
+def visualize_similarity_umap_with_clusters(similarity_matrix, features, n_clusters=6, highlight_samples=None):
     # 標準化數據
     scaler = StandardScaler()
     scaled_data = scaler.fit_transform(similarity_matrix)
@@ -41,7 +41,16 @@ def visualize_similarity_umap_with_clusters(similarity_matrix, features, n_clust
 
     # 繪製 UMAP 結果
     plt.figure(figsize=(10, 10))
-    sns.scatterplot(x='umap1', y='umap2', data=df_umap, hue='cluster', style='type', palette='tab10', s=50, alpha=0.7)
+    scatter_plot = sns.scatterplot(x='umap1', y='umap2', data=df_umap, hue='cluster', style='type', palette='tab10', s=50, alpha=0.7)
+    
+    # 標注特定樣本
+    if highlight_samples:
+        for sample_id in highlight_samples:
+            if sample_id in features:
+                sample_index = list(features.keys()).index(sample_id)
+                plt.scatter(df_umap.iloc[sample_index]['umap1'], df_umap.iloc[sample_index]['umap2'], color='red', marker='*', s=200, label=sample_id)
+                plt.text(df_umap.iloc[sample_index]['umap1'], df_umap.iloc[sample_index]['umap2'], sample_id, fontsize=9, weight='bold')
+
     plt.title(f'UMAP Visualization of Sample Similarity with KMeans Clusters (n_clusters={n_clusters})')
     plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.show()
@@ -49,5 +58,8 @@ def visualize_similarity_umap_with_clusters(similarity_matrix, features, n_clust
 # 加載數據
 similarity_matrix, features = load_similarity_and_features()
 
+# 需要標注的樣本ID列表
+highlight_samples = ['unknow']
+
 # 使用 UMAP 進行視覺化
-visualize_similarity_umap_with_clusters(similarity_matrix, features, n_clusters=6)
+visualize_similarity_umap_with_clusters(similarity_matrix, features, n_clusters=6, highlight_samples=highlight_samples)
