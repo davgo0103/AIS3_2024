@@ -12,3 +12,6 @@
 !/simnum.py
 !/toJSON.py
 !/report
+!/draw.py
+!/features.json
+!/similarity_matrix.npy
