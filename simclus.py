@@ -69,28 +69,32 @@ for binary_folder in binary_folders:
 for report_folder, binary_folder in zip(report_folders, binary_folders):
     convert_reports_to_binary(report_folder, binary_folder, all_attack_ids, MBC)
 
-# 提取特徵
-def extract_binary_features(binary_folders):
+def extract_binary_features(binary_folders, types):
     features = {}
-    for binary_folder in binary_folders:
+    for binary_folder, type_label in zip(binary_folders, types):
         json_files = filter_files_by_size(binary_folder, 3)
         for json_file in json_files:
             if json_file.endswith('.json'):
                 with open(os.path.join(binary_folder, json_file), 'r', encoding='utf-8') as file:
                     data = json.load(file)
                     sample_id = json_file.split('_')[0]
-                    features[sample_id] = data['attack_ids'] + data['MBC']
+                    features[sample_id] = {
+                        'data': data['attack_ids'] + data['MBC'],
+                        'type': type_label
+                    }
     return features
 
 # 提取特徵
-features = extract_binary_features(binary_folders)
+features = extract_binary_features(binary_folders, types)
 print("提取的特徵:")
 for sample_id, feature in features.items():
-    print(f"{sample_id}: {feature[:10]}...")  # 只印出前10個元素
+    print(f"{sample_id}: {feature['data'][:10]}...")  # 只印出前10個元素
+    
+
 
 def calculate_similarity_jaccard(features):
     sample_ids = list(features.keys())
-    vectors = np.array(list(features.values()))
+    vectors = np.array([features[sample_id]['data'] for sample_id in sample_ids])
 
     jaccard_matrix = np.zeros((len(sample_ids), len(sample_ids)))
     for i in range(len(sample_ids)):
@@ -107,12 +111,11 @@ def calculate_similarity_jaccard(features):
             similarity_dict[sample_id][other_sample_id] = jaccard_matrix[i][j]
     return similarity_dict, jaccard_matrix
 
-
 # 計算相似度
 similarity, jaccard_matrix = calculate_similarity_jaccard(features)
 
 # 視覺化相似度
-def visualize_similarity_tsne_with_clusters(similarity_matrix, sample_ids, n_clusters=5):
+def visualize_similarity_tsne_with_clusters(similarity_matrix, features, n_clusters=5):
     # 標準化數據
     scaler = StandardScaler()
     scaled_data = scaler.fit_transform(similarity_matrix)
@@ -132,15 +135,21 @@ def visualize_similarity_tsne_with_clusters(similarity_matrix, sample_ids, n_clu
     df_tsne = pd.DataFrame(tsne_results, columns=['tsne1', 'tsne2'])
     df_tsne['cluster'] = clusters
 
+    # 添加 type 信息
+    df_tsne['type'] = [features[sample_id]['type'] for sample_id in features.keys()]
+
     # 繪製 t-SNE 結果
     plt.figure(figsize=(10, 10))
-    sns.scatterplot(x='tsne1', y='tsne2', data=df_tsne, hue='cluster', palette='tab10', s=100, alpha=0.7)
+    sns.scatterplot(x='tsne1', y='tsne2', data=df_tsne, hue='type', style='cluster', palette='tab10', s=100, alpha=0.7)
     plt.title('t-SNE Visualization of Sample Similarity with KMeans Clusters')
     plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.show()
 
+# 計算相似度
+similarity, jaccard_matrix = calculate_similarity_jaccard(features)
+
 # 視覺化相似度
-visualize_similarity_tsne_with_clusters(jaccard_matrix, list(features.keys()), n_clusters=5)
+visualize_similarity_tsne_with_clusters(jaccard_matrix, features, n_clusters=5)
 
 # 生成報告
 def generate_report(similarity, output_file='report.txt'):
