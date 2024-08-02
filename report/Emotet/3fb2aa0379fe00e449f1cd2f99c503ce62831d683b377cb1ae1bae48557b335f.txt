@@ -1,0 +1,52 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 9530b2a413ddc20b251d5067cf2b29cb                                                                               │
+│ sha1                   │ 23a424067648ad7a194f82e34ce4dc09f2afd041                                                                       │
+│ sha256                 │ 3fb2aa0379fe00e449f1cd2f99c503ce62831d683b377cb1ae1bae48557b335f                                               │
+│ analysis               │ static                                                                                                         │
+│ os                     │ windows                                                                                                        │
+│ format                 │ pe                                                                                                             │
+│ arch                   │ amd64                                                                                                          │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/Emotet/3fb2aa0379fe00e449f1cd2f99c503ce62831d683b377cb1ae1bae48557b335f.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Deobfuscate/Decode Files or Information T1140                                      │
+│                        │ Obfuscated Files or Information::Indicator Removal from Tools T1027.005            │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+│                        │ System Information Discovery T1082                                                 │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Shared Modules T1129                                                               │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ ANTI-STATIC ANALYSIS        │ Executable Code Obfuscation::Argument Obfuscation [B0032.020]                 │
+│                             │ Executable Code Obfuscation::Stack Strings [B0032.017]                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ contain obfuscated stackstrings                      │ anti-analysis/obfuscation/string/stackstring         │
+│ decode data using Base64 via WinAPI (2 matches)      │ data-manipulation/encoding/base64                    │
+│ query environment variable                           │ host-interaction/environment-variable                │
+│ enumerate files on Windows                           │ host-interaction/file-system/files/list              │
+│ write file on Windows (2 matches)                    │ host-interaction/file-system/write                   │
+│ terminate process (2 matches)                        │ host-interaction/process/terminate                   │
+│ link function at runtime on Windows (5 matches)      │ linking/runtime-linking                              │
+│ parse PE header (2 matches)                          │ load-code/pe                                         │
+│ resolve function by parsing PE exports (2 matches)   │ load-code/pe                                         │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

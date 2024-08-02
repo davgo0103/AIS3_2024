@@ -1,0 +1,67 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ fc1b8ea643c634d0d8331c60e87a503a                                                                               │
+│ sha1                   │ 7812ec3c94a762b14e4d6eb897a62dff7b018ed2                                                                       │
+│ sha256                 │ 34d90e724c062712f16639d27e3928569dfcdb5d525492983be75d8c3081acb7                                               │
+│ analysis               │ static                                                                                                         │
+│ os                     │ windows                                                                                                        │
+│ format                 │ pe                                                                                                             │
+│ arch                   │ amd64                                                                                                          │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/Emotet/34d90e724c062712f16639d27e3928569dfcdb5d525492983be75d8c3081acb7.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Obfuscated Files or Information T1027                                              │
+│                        │ Obfuscated Files or Information::Indicator Removal from Tools T1027.005            │
+│                        │ Virtualization/Sandbox Evasion::System Checks T1497.001                            │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+│                        │ System Information Discovery T1082                                                 │
+│                        │ System Location Discovery T1614                                                    │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Shared Modules T1129                                                               │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ ANTI-BEHAVIORAL ANALYSIS    │ Virtual Machine Detection [B0009]                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ ANTI-STATIC ANALYSIS        │ Executable Code Obfuscation::Argument Obfuscation [B0032.020]                 │
+│                             │ Executable Code Obfuscation::Stack Strings [B0032.017]                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Encode Data::XOR [C0026.002]                                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Read File [C0051]                                                             │
+│                             │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ reference anti-VM strings targeting VMWare           │ anti-analysis/anti-vm/vm-detection                   │
+│ contain obfuscated stackstrings                      │ anti-analysis/obfuscation/string/stackstring         │
+│ get geographical location                            │ collection                                           │
+│ encode data using XOR                                │ data-manipulation/encoding/xor                       │
+│ contain a thread local storage (.tls) section        │ executable/pe/section/tls                            │
+│ query environment variable                           │ host-interaction/environment-variable                │
+│ enumerate files on Windows                           │ host-interaction/file-system/files/list              │
+│ get file size                                        │ host-interaction/file-system/meta                    │
+│ read file on Windows (3 matches)                     │ host-interaction/file-system/read                    │
+│ write file on Windows (2 matches)                    │ host-interaction/file-system/write                   │
+│ terminate process (2 matches)                        │ host-interaction/process/terminate                   │
+│ link function at runtime on Windows (5 matches)      │ linking/runtime-linking                              │
+│ linked against CPP standard library                  │ linking/static                                       │
+│ parse PE header                                      │ load-code/pe                                         │
+│ resolve function by parsing PE exports (3 matches)   │ load-code/pe                                         │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

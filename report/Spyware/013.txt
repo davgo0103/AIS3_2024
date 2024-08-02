@@ -1,0 +1,122 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 7f32dcbb00de079c31ff7895ae9c0560                                                                                                 │
+│ sha1                   │ e80841a355b8dce9955b9bbba63f02a4ad31a836                                                                                         │
+│ sha256                 │ 5658f42d6332d99827d772a710d74e905f822d23e958c86f802973c2cffe850f                                                                 │
+│ analysis               │ static                                                                                                                           │
+│ os                     │ any                                                                                                                              │
+│ format                 │ dotnet                                                                                                                           │
+│ arch                   │ any                                                                                                                              │
+│ path                   │ C:/Users/Administrator/Desktop/crawl_malware_report/spyware/5658f42d6332d99827d772a710d74e905f822d23e958c86f802973c2cffe850f.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ COLLECTION             │ Screen Capture T1113                                                               │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION        │ Deobfuscate/Decode Files or Information T1140                                      │
+│                        │ Indicator Removal::File Deletion T1070.004                                         │
+│                        │ Obfuscated Files or Information T1027                                              │
+│                        │ Virtualization/Sandbox Evasion::System Checks T1497.001                            │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ Account Discovery T1087                                                            │
+│                        │ Application Window Discovery T1010                                                 │
+│                        │ File and Directory Discovery T1083                                                 │
+│                        │ Process Discovery T1057                                                            │
+│                        │ Software Discovery T1518                                                           │
+│                        │ System Information Discovery T1082                                                 │
+│                        │ System Location Discovery T1614                                                    │
+│                        │ System Owner/User Discovery T1033                                                  │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ IMPACT                 │ Resource Hijacking T1496                                                           │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ ANTI-BEHAVIORAL ANALYSIS    │ Debugger Detection::CheckRemoteDebuggerPresent [B0001.002]                    │
+│                             │ Debugger Detection::WudfIsAnyDebuggerPresent [B0001.031]                      │
+│                             │ Virtual Machine Detection [B0009]                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COLLECTION                  │ Screen Capture::WinAPI [E1113.m01]                                            │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COMMAND AND CONTROL         │ C2 Communication::Receive Data [B0030.002]                                    │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COMMUNICATION               │ HTTP Communication::Get Response [C0002.017]                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ CRYPTOGRAPHY                │ Decrypt Data [C0031]                                                          │
+│                             │ Encrypt Data [C0027]                                                          │
+│                             │ Generate Pseudo-random Sequence::Use API [C0021.003]                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Decode Data::Base64 [C0053.001]                                               │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Self Deletion::COMSPEC Environment Variable [F0007.001]                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ Analysis Tool Discovery::Process detection [B0013.001]                        │
+│                             │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Copy File [C0045]                                                             │
+│                             │ Create Directory [C0046]                                                      │
+│                             │ Delete Directory [C0048]                                                      │
+│                             │ Delete File [C0047]                                                           │
+│                             │ Read File [C0051]                                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Console [C0033]                                                               │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Mutex [C0042]                                                          │
+│                             │ Create Process [C0017]                                                        │
+│                             │ Suspend Thread [C0055]                                                        │
+│                             │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                                        │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ reference analysis tools strings                                  │ anti-analysis                                        │
+│ check for debugger via API                                        │ anti-analysis/anti-debugging/debugger-detection      │
+│ self delete (2 matches)                                           │ anti-analysis/anti-forensic/self-deletion            │
+│ reference anti-VM strings targeting Qemu                          │ anti-analysis/anti-vm/vm-detection                   │
+│ reference anti-VM strings targeting VMWare                        │ anti-analysis/anti-vm/vm-detection                   │
+│ reference anti-VM strings targeting VirtualBox                    │ anti-analysis/anti-vm/vm-detection                   │
+│ reference anti-VM strings targeting Xen                           │ anti-analysis/anti-vm/vm-detection                   │
+│ get geographical location                                         │ collection                                           │
+│ save image in .NET (2 matches)                                    │ collection                                           │
+│ capture screenshot                                                │ collection/screenshot                                │
+│ receive data                                                      │ communication                                        │
+│ create zip archive in .NET                                        │ data-manipulation/compression                        │
+│ decode data using Base64 in .NET (16 matches)                     │ data-manipulation/encoding/base64                    │
+│ encrypt or decrypt data via BCrypt                                │ data-manipulation/encryption                         │
+│ encrypt data using DPAPI (27 matches)                             │ data-manipulation/encryption/dpapi                   │
+│ generate random numbers in .NET                                   │ data-manipulation/prng                               │
+│ find data using regex in .NET (5 matches)                         │ data-manipulation/regex                              │
+│ manipulate console buffer (73 matches)                            │ host-interaction/console                             │
+│ query environment variable (4 matches)                            │ host-interaction/environment-variable                │
+│ check file extension in .NET (2 matches)                          │ host-interaction/file-system                         │
+│ get common file path (17 matches)                                 │ host-interaction/file-system                         │
+│ copy file (30 matches)                                            │ host-interaction/file-system/copy                    │
+│ create directory (5 matches)                                      │ host-interaction/file-system/create                  │
+│ delete directory (4 matches)                                      │ host-interaction/file-system/delete                  │
+│ delete file (27 matches)                                          │ host-interaction/file-system/delete                  │
+│ check if directory exists (33 matches)                            │ host-interaction/file-system/exists                  │
+│ check if file exists (46 matches)                                 │ host-interaction/file-system/exists                  │
+│ enumerate files in .NET (32 matches)                              │ host-interaction/file-system/files/list              │
+│ read file on Windows (2 matches)                                  │ host-interaction/file-system/read                    │
+│ enumerate gui resources                                           │ host-interaction/gui                                 │
+│ allocate unmanaged memory in .NET (4 matches)                     │ host-interaction/memory                              │
+│ manipulate unmanaged memory in .NET (16 matches)                  │ host-interaction/memory                              │
+│ create mutex                                                      │ host-interaction/mutex                               │
+│ get hostname (3 matches)                                          │ host-interaction/os/hostname                         │
+│ create a process with modified I/O handles and window (8 matches) │ host-interaction/process/create                      │
+│ create process on Windows (8 matches)                             │ host-interaction/process/create                      │
+│ enumerate processes                                               │ host-interaction/process/list                        │
+│ terminate process (12 matches)                                    │ host-interaction/process/terminate                   │
+│ get session integrity level                                       │ host-interaction/session                             │
+│ get session user name (2 matches)                                 │ host-interaction/session                             │
+│ suspend thread (2 matches)                                        │ host-interaction/thread/suspend                      │
+│ reference cryptocurrency strings                                  │ impact/cryptocurrency                                │
+│ unmanaged call (5 matches)                                        │ runtime                                              │
+│ compiled to the .NET platform                                     │ runtime/dotnet                                       │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

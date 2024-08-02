@@ -1,0 +1,73 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 31624bc0e022bfc1fe8ba74f79c3d2bf                                                                                                 │
+│ sha1                   │ 6cf0cc5844d750d97dee58c2fb9c168e0f4ef173                                                                                         │
+│ sha256                 │ 146cc76e1a90d0d35e0bdd020cba231b03ba9e09a0ae5f1cc242eb31f7c04773                                                                 │
+│ analysis               │ static                                                                                                                           │
+│ os                     │ windows                                                                                                                          │
+│ format                 │ pe                                                                                                                               │
+│ arch                   │ i386                                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/crawl_malware_report/spyware/146cc76e1a90d0d35e0bdd020cba231b03ba9e09a0ae5f1cc242eb31f7c04773.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ COLLECTION             │ Input Capture::Keylogging T1056.001                                                │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION        │ Hide Artifacts::Hidden Window T1564.003                                            │
+│                        │ Obfuscated Files or Information T1027                                              │
+│                        │ Obfuscated Files or Information::Indicator Removal from Tools T1027.005            │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ Application Window Discovery T1010                                                 │
+│                        │ System Information Discovery T1082                                                 │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Shared Modules T1129                                                               │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ ANTI-STATIC ANALYSIS        │ Executable Code Obfuscation::Argument Obfuscation [B0032.020]                 │
+│                             │ Executable Code Obfuscation::Stack Strings [B0032.017]                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COLLECTION                  │ Keylogging::Polling [F0002.002]                                               │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Encode Data::XOR [C0026.002]                                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ MEMORY                      │ Allocate Memory [C0007]                                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Allocate Thread Local Storage [C0040]                                         │
+│                             │ Check Mutex [C0043]                                                           │
+│                             │ Create Mutex [C0042]                                                          │
+│                             │ Set Thread Local Storage Value [C0041]                                        │
+│                             │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ contain obfuscated stackstrings (2 matches)          │ anti-analysis/obfuscation/string/stackstring         │
+│ log keystrokes via polling                           │ collection/keylog                                    │
+│ compiled with MinGW for Windows                      │ compiler/mingw                                       │
+│ encode data using XOR                                │ data-manipulation/encoding/xor                       │
+│ contain a thread local storage (.tls) section        │ executable/pe/section/tls                            │
+│ query environment variable                           │ host-interaction/environment-variable                │
+│ write file on Windows (3 matches)                    │ host-interaction/file-system/write                   │
+│ find graphical window                                │ host-interaction/gui/window/find                     │
+│ hide graphical window                                │ host-interaction/gui/window/hide                     │
+│ check mutex and exit (2 matches)                     │ host-interaction/mutex                               │
+│ get thread local storage value (4 matches)           │ host-interaction/process                             │
+│ allocate or change RWX memory                        │ host-interaction/process/inject                      │
+│ allocate thread local storage                        │ host-interaction/thread/tls                          │
+│ set thread local storage value (4 matches)           │ host-interaction/thread/tls                          │
+│ link function at runtime on Windows (2 matches)      │ linking/runtime-linking                              │
+│ resolve function by parsing PE exports (3 matches)   │ load-code/pe                                         │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

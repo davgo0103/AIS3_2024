@@ -1,0 +1,56 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 4a0e07690ba066341d7cd8df29daf966                                                                               │
+│ sha1                   │ 7f8833e01027753003c2540ec9e723e3feb93e83                                                                       │
+│ sha256                 │ 0a91ca038be80280f9e9e300dafd4490be9269d1ad7649f102aa5c58b7d7a9db                                               │
+│ analysis               │ static                                                                                                         │
+│ os                     │ windows                                                                                                        │
+│ format                 │ pe                                                                                                             │
+│ arch                   │ i386                                                                                                           │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/Emotet/0a91ca038be80280f9e9e300dafd4490be9269d1ad7649f102aa5c58b7d7a9db.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DISCOVERY              │ Query Registry T1012                                                               │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Shared Modules T1129                                                               │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DISCOVERY                   │ Application Window Discovery [E1010]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Delete File [C0047]                                                           │
+│                             │ Get File Attributes [C0049]                                                   │
+│                             │ Move File [C0063]                                                             │
+│                             │ Read File [C0051]                                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Registry::Query Registry Value [C0036.006]                                    │
+│                             │ Registry::Set Registry Key [C0036.001]                                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Allocate Thread Local Storage [C0040]                                         │
+│                             │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ extract resource via kernel32 functions (4 matches)  │ executable/resource                                  │
+│ delete file                                          │ host-interaction/file-system/delete                  │
+│ get file attributes                                  │ host-interaction/file-system/meta                    │
+│ move file                                            │ host-interaction/file-system/move                    │
+│ read .ini file                                       │ host-interaction/file-system/read                    │
+│ set application hook (2 matches)                     │ host-interaction/gui                                 │
+│ get graphical window text (2 matches)                │ host-interaction/gui/window/get-text                 │
+│ terminate process                                    │ host-interaction/process/terminate                   │
+│ query or enumerate registry value (2 matches)        │ host-interaction/registry                            │
+│ set registry value                                   │ host-interaction/registry/create                     │
+│ allocate thread local storage                        │ host-interaction/thread/tls                          │
+│ link many functions at runtime                       │ linking/runtime-linking                              │
+│ linked against CPP standard library                  │ linking/static                                       │
+│ resolve function by parsing PE exports               │ load-code/pe                                         │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

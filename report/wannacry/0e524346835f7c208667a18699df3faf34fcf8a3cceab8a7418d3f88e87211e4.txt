@@ -1,0 +1,92 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 40b969cd98fc3064cea451fbe96ae88f                                                                                 │
+│ sha1                   │ a23ac3f299abbddbc588b217ebd30bad5eaf73d4                                                                         │
+│ sha256                 │ 7405c58432cf7116d8101c6af4d399d316982b9239976e1179629f551ce80a04                                                 │
+│ analysis               │ static                                                                                                           │
+│ os                     │ windows                                                                                                          │
+│ format                 │ pe                                                                                                               │
+│ arch                   │ i386                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/wannacry/0e524346835f7c208667a18699df3faf34fcf8a3cceab8a7418d3f88e87211e4.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ COLLECTION             │ Screen Capture T1113                                                               │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION        │ File and Directory Permissions Modification T1222                                  │
+│                        │ Obfuscated Files or Information T1027                                              │
+│                        │ Virtualization/Sandbox Evasion::System Checks T1497.001                            │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+│                        │ Query Registry T1012                                                               │
+│                        │ System Information Discovery T1082                                                 │
+│                        │ System Location Discovery T1614                                                    │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Command and Scripting Interpreter T1059                                            │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ ANTI-BEHAVIORAL ANALYSIS    │ Virtual Machine Detection [B0009]                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COLLECTION                  │ Screen Capture::WinAPI [E1113.m01]                                            │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ CRYPTOGRAPHY                │ Generate Pseudo-random Sequence [C0021]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Encode Data::XOR [C0026.002]                                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION                   │ Command and Scripting Interpreter [E1059]                                     │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Create Directory [C0046]                                                      │
+│                             │ Delete File [C0047]                                                           │
+│                             │ Get File Attributes [C0049]                                                   │
+│                             │ Read File [C0051]                                                             │
+│                             │ Set File Attributes [C0050]                                                   │
+│                             │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Registry::Query Registry Value [C0036.006]                                    │
+│                             │ Registry::Set Registry Key [C0036.001]                                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Mutex [C0042]                                                          │
+│                             │ Create Process [C0017]                                                        │
+│                             │ Set Thread Local Storage Value [C0041]                                        │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ reference anti-VM strings targeting Qemu             │ anti-analysis/anti-vm/vm-detection                   │
+│ get geographical location                            │ collection                                           │
+│ capture screenshot (2 matches)                       │ collection/screenshot                                │
+│ compiled with Borland Delphi                         │ compiler/delphi                                      │
+│ encode data using XOR (2 matches)                    │ data-manipulation/encoding/xor                       │
+│ generate random numbers using the Delphi LCG         │ data-manipulation/prng/lcg                           │
+│ contain a thread local storage (.tls) section        │ executable/pe/section/tls                            │
+│ accept command line arguments (2 matches)            │ host-interaction/cli                                 │
+│ get common file path (2 matches)                     │ host-interaction/file-system                         │
+│ set current directory                                │ host-interaction/file-system                         │
+│ create directory                                     │ host-interaction/file-system/create                  │
+│ delete file (2 matches)                              │ host-interaction/file-system/delete                  │
+│ enumerate files on Windows (4 matches)               │ host-interaction/file-system/files/list              │
+│ get file attributes (4 matches)                      │ host-interaction/file-system/meta                    │
+│ get file size (2 matches)                            │ host-interaction/file-system/meta                    │
+│ set file attributes (4 matches)                      │ host-interaction/file-system/meta                    │
+│ read file on Windows                                 │ host-interaction/file-system/read                    │
+│ write file on Windows (2 matches)                    │ host-interaction/file-system/write                   │
+│ get disk information                                 │ host-interaction/hardware/storage                    │
+│ create mutex                                         │ host-interaction/mutex                               │
+│ get thread local storage value                       │ host-interaction/process                             │
+│ create process on Windows (2 matches)                │ host-interaction/process/create                      │
+│ query or enumerate registry value                    │ host-interaction/registry                            │
+│ set registry value                                   │ host-interaction/registry/create                     │
+│ set thread local storage value                       │ host-interaction/thread/tls                          │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

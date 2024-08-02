@@ -1,0 +1,67 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 8669e8f71fd06872bbc1d2399c33d7b1                                                                                                 │
+│ sha1                   │ 6cdcbc65e5b4d30c3e2e9e3e2c7ad4ed8373bcc5                                                                                         │
+│ sha256                 │ b7d757263aac8d89154f7962550b795cca99e2df080d8bfdfbc3582b1a0d8d43                                                                 │
+│ analysis               │ static                                                                                                                           │
+│ os                     │ any                                                                                                                              │
+│ format                 │ dotnet                                                                                                                           │
+│ arch                   │ i386                                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/crawl_malware_report/spyware/b7d757263aac8d89154f7962550b795cca99e2df080d8bfdfbc3582b1a0d8d43.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Deobfuscate/Decode Files or Information T1140                                      │
+│                        │ Indicator Removal::File Deletion T1070.004                                         │
+│                        │ Reflective Code Loading T1620                                                      │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+│                        │ System Information Discovery T1082                                                 │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MAEC Category               │ MAEC Value                                                                    │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ malware-category            │ launcher                                                                      │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ CRYPTOGRAPHY                │ Cryptographic Hash::MD5 [C0029.001]                                           │
+│                             │ Generate Pseudo-random Sequence::Use API [C0021.003]                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Decode Data::Base64 [C0053.001]                                               │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Self Deletion::COMSPEC Environment Variable [F0007.001]                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Console [C0033]                                                               │
+│                             │ Registry::Set Registry Key [C0036.001]                                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Process [C0017]                                                        │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ self delete                                          │ anti-analysis/anti-forensic/self-deletion            │
+│ decode data using Base64 in .NET                     │ data-manipulation/encoding/base64                    │
+│ hash data with MD5                                   │ data-manipulation/hashing/md5                        │
+│ generate random numbers in .NET (2 matches)          │ data-manipulation/prng                               │
+│ manipulate console buffer                            │ host-interaction/console                             │
+│ query environment variable                           │ host-interaction/environment-variable                │
+│ get common file path                                 │ host-interaction/file-system                         │
+│ enumerate files in .NET                              │ host-interaction/file-system/files/list              │
+│ write file on Windows                                │ host-interaction/file-system/write                   │
+│ create process on Windows                            │ host-interaction/process/create                      │
+│ set registry value                                   │ host-interaction/registry/create                     │
+│ load .NET assembly                                   │ load-code/dotnet                                     │
+│ compiled to the .NET platform                        │ runtime/dotnet                                       │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

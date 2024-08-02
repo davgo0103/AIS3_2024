@@ -1,0 +1,22 @@
+WARNING:dnfile:failed to parse CLR data: Invalid CLR Structure information. Can't read data at RVA: 0x614ef0
+WARNING:dnfile:failed to parse CLR data: Invalid CLR Structure information. Can't read data at RVA: 0x614ef0
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ f2300819be69b069b2975262d73c9e2e                                                                                 │
+│ sha1                   │ 649de2967882cd1f8d857336ec86492bd63d6d40                                                                         │
+│ sha256                 │ cea145f0ce660c24edb2c30393e334c46c8d875191e1a0a7fca77dc3bff1dbb1                                                 │
+│ analysis               │ static                                                                                                           │
+│ os                     │ windows                                                                                                          │
+│ format                 │ pe                                                                                                               │
+│ arch                   │ i386                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/wannacry/52f418cf6a5177d34668b112a0eb6c3621d7f1fbc046caded45d3750513f539d.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ compiled to the .NET platform                        │ runtime/dotnet                                       │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

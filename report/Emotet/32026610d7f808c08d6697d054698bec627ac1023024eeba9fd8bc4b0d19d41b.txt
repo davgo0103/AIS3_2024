@@ -1,0 +1,58 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 19728a816f82a6b1e5e49956b6e184ab                                                                               │
+│ sha1                   │ 524d09733432d0038b4852d331831e90d9b56513                                                                       │
+│ sha256                 │ 32026610d7f808c08d6697d054698bec627ac1023024eeba9fd8bc4b0d19d41b                                               │
+│ analysis               │ static                                                                                                         │
+│ os                     │ windows                                                                                                        │
+│ format                 │ pe                                                                                                             │
+│ arch                   │ amd64                                                                                                          │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/Emotet/32026610d7f808c08d6697d054698bec627ac1023024eeba9fd8bc4b0d19d41b.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Deobfuscate/Decode Files or Information T1140                                      │
+│                        │ Obfuscated Files or Information T1027                                              │
+│                        │ Obfuscated Files or Information::Indicator Removal from Tools T1027.005            │
+│                        │ Virtualization/Sandbox Evasion::System Checks T1497.001                            │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Shared Modules T1129                                                               │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ ANTI-BEHAVIORAL ANALYSIS    │ Virtual Machine Detection [B0009]                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ ANTI-STATIC ANALYSIS        │ Executable Code Obfuscation::Argument Obfuscation [B0032.020]                 │
+│                             │ Executable Code Obfuscation::Stack Strings [B0032.017]                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Encode Data::XOR [C0026.002]                                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Custom Algorithm [E1027.m03]        │
+│                             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Environment Variable::Set Variable [C0034.001]                                │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ reference anti-VM strings targeting VMWare           │ anti-analysis/anti-vm/vm-detection                   │
+│ contain obfuscated stackstrings                      │ anti-analysis/obfuscation/string/stackstring         │
+│ encode data using ADD XOR SUB operations             │ data-manipulation/encoding                           │
+│ decode data using Base64 via WinAPI (2 matches)      │ data-manipulation/encoding/base64                    │
+│ encode data using XOR                                │ data-manipulation/encoding/xor                       │
+│ set environment variable                             │ host-interaction/environment-variable                │
+│ enumerate files on Windows                           │ host-interaction/file-system/files/list              │
+│ link function at runtime on Windows (7 matches)      │ linking/runtime-linking                              │
+│ linked against CPP regex library                     │ linking/static/cppregex                              │
+│ resolve function by parsing PE exports               │ load-code/pe                                         │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

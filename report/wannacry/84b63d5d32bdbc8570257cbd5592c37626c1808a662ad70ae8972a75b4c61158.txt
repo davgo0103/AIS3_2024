@@ -1,0 +1,97 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 8f9a55e6266dd48caaa3fbfe2d2dffe1                                                                                 │
+│ sha1                   │ 0c75ec1b39c44816288eabde5c2ffe992ec5c199                                                                         │
+│ sha256                 │ c512b2ec857a1782541626a108c85df0a97a4a3dded4b906b49b5062a1398262                                                 │
+│ analysis               │ static                                                                                                           │
+│ os                     │ windows                                                                                                          │
+│ format                 │ pe                                                                                                               │
+│ arch                   │ i386                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/wannacry/84b63d5d32bdbc8570257cbd5592c37626c1808a662ad70ae8972a75b4c61158.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ File and Directory Permissions Modification T1222                                  │
+│                        │ Obfuscated Files or Information T1027                                              │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+│                        │ Query Registry T1012                                                               │
+│                        │ System Information Discovery T1082                                                 │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Shared Modules T1129                                                               │
+│                        │ System Services::Service Execution T1569.002                                       │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ PERSISTENCE            │ Create or Modify System Process::Windows Service T1543.003                         │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ CRYPTOGRAPHY                │ Encrypt Data::AES [C0027.001]                                                 │
+│                             │ Encrypt Data::RC4 [C0027.009]                                                 │
+│                             │ Encryption Key::RC4 KSA [C0028.002]                                           │
+│                             │ Generate Pseudo-random Sequence [C0021]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Checksum::CRC32 [C0032.001]                                                   │
+│                             │ Compression Library [C0060]                                                   │
+│                             │ Encode Data::XOR [C0026.002]                                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+│                             │ Obfuscated Files or Information::Encryption-Standard Algorithm [E1027.m05]    │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ Code Discovery::Enumerate PE Sections [B0046.001]                             │
+│                             │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Copy File [C0045]                                                             │
+│                             │ Create Directory [C0046]                                                      │
+│                             │ Get File Attributes [C0049]                                                   │
+│                             │ Read File [C0051]                                                             │
+│                             │ Set File Attributes [C0050]                                                   │
+│                             │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Registry::Query Registry Value [C0036.006]                                    │
+│                             │ Registry::Set Registry Key [C0036.001]                                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Check Mutex [C0043]                                                           │
+│                             │ Create Process [C0017]                                                        │
+│                             │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ hash data with CRC32 (2 matches)                     │ data-manipulation/checksum/crc32                     │
+│ encode data using XOR (15 matches)                   │ data-manipulation/encoding/xor                       │
+│ encrypt data using AES (5 matches)                   │ data-manipulation/encryption/aes                     │
+│ reference AES constants (5 matches)                  │ data-manipulation/encryption/aes                     │
+│ encrypt data using RC4 KSA (3 matches)               │ data-manipulation/encryption/rc4                     │
+│ generate random numbers using the Delphi LCG         │ data-manipulation/prng/lcg                           │
+│ extract resource via kernel32 functions              │ executable/resource                                  │
+│ get common file path (3 matches)                     │ host-interaction/file-system                         │
+│ set current directory (3 matches)                    │ host-interaction/file-system                         │
+│ copy file                                            │ host-interaction/file-system/copy                    │
+│ create directory (2 matches)                         │ host-interaction/file-system/create                  │
+│ check if file exists (4 matches)                     │ host-interaction/file-system/exists                  │
+│ get file attributes (6 matches)                      │ host-interaction/file-system/meta                    │
+│ get file size (2 matches)                            │ host-interaction/file-system/meta                    │
+│ set file attributes                                  │ host-interaction/file-system/meta                    │
+│ read file on Windows (3 matches)                     │ host-interaction/file-system/read                    │
+│ write file on Windows (2 matches)                    │ host-interaction/file-system/write                   │
+│ check mutex                                          │ host-interaction/mutex                               │
+│ get hostname                                         │ host-interaction/os/hostname                         │
+│ create process on Windows                            │ host-interaction/process/create                      │
+│ terminate process                                    │ host-interaction/process/terminate                   │
+│ query or enumerate registry value                    │ host-interaction/registry                            │
+│ set registry value                                   │ host-interaction/registry/create                     │
+│ create service                                       │ host-interaction/service/create                      │
+│ start service                                        │ host-interaction/service/start                       │
+│ link many functions at runtime (2 matches)           │ linking/runtime-linking                              │
+│ linked against ZLIB                                  │ linking/static/zlib                                  │
+│ enumerate PE sections (2 matches)                    │ load-code/pe                                         │
+│ parse PE header                                      │ load-code/pe                                         │
+│ persist via Windows service                          │ persistence/service                                  │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

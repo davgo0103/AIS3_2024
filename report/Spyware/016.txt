@@ -1,0 +1,131 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 6b753b9ffc4e03be898db389b2dcd99d                                                                                                 │
+│ sha1                   │ 1a9a3b40aee2d3cbe8083313a4a93d9f9c3b7aa5                                                                                         │
+│ sha256                 │ 7ddb331b1930f9cd3fd7e6de43119db0bbcb20bf6d23b1fbb60db12b0d983c2f                                                                 │
+│ analysis               │ static                                                                                                                           │
+│ os                     │ any                                                                                                                              │
+│ format                 │ dotnet                                                                                                                           │
+│ arch                   │ any                                                                                                                              │
+│ path                   │ C:/Users/Administrator/Desktop/crawl_malware_report/spyware/7ddb331b1930f9cd3fd7e6de43119db0bbcb20bf6d23b1fbb60db12b0d983c2f.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Deobfuscate/Decode Files or Information T1140                                      │
+│                        │ File and Directory Permissions Modification T1222                                  │
+│                        │ Obfuscated Files or Information T1027                                              │
+│                        │ Reflective Code Loading T1620                                                      │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ Account Discovery T1087                                                            │
+│                        │ File and Directory Discovery T1083                                                 │
+│                        │ Process Discovery T1057                                                            │
+│                        │ Query Registry T1012                                                               │
+│                        │ Software Discovery T1518                                                           │
+│                        │ System Information Discovery T1082                                                 │
+│                        │ System Owner/User Discovery T1033                                                  │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Windows Management Instrumentation T1047                                           │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MAEC Category               │ MAEC Value                                                                    │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ malware-category            │ downloader                                                                    │
+│                             │ launcher                                                                      │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ COMMAND AND CONTROL         │ C2 Communication::Receive Data [B0030.002]                                    │
+│                             │ C2 Communication::Send Data [B0030.001]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COMMUNICATION               │ HTTP Communication [C0002]                                                    │
+│                             │ HTTP Communication::Download URL [C0002.006]                                  │
+│                             │ HTTP Communication::Send Request [C0002.003]                                  │
+│                             │ Socket Communication::Create TCP Socket [C0001.011]                           │
+│                             │ Socket Communication::Create UDP Socket [C0001.010]                           │
+│                             │ Socket Communication::Receive Data [C0001.006]                                │
+│                             │ Socket Communication::Send Data [C0001.007]                                   │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ CRYPTOGRAPHY                │ Cryptographic Hash::MD5 [C0029.001]                                           │
+│                             │ Generate Pseudo-random Sequence::Use API [C0021.003]                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Decode Data::Base64 [C0053.001]                                               │
+│                             │ Encode Data::Base64 [C0026.001]                                               │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Copy File [C0045]                                                             │
+│                             │ Delete Directory [C0048]                                                      │
+│                             │ Delete File [C0047]                                                           │
+│                             │ Move File [C0063]                                                             │
+│                             │ Read File [C0051]                                                             │
+│                             │ Set File Attributes [C0050]                                                   │
+│                             │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Registry::Query Registry Value [C0036.006]                                    │
+│                             │ Registry::Set Registry Key [C0036.001]                                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Mutex [C0042]                                                          │
+│                             │ Create Process [C0017]                                                        │
+│                             │ Create Thread [C0038]                                                         │
+│                             │ Suspend Thread [C0055]                                                        │
+│                             │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                            │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ save image in .NET (2 matches)                        │ collection                                           │
+│ send data (2 matches)                                 │ communication                                        │
+│ receive and write data from server to client          │ communication/c2/file-transfer                       │
+│ reference HTTP User-Agent string                      │ communication/http                                   │
+│ send HTTP request with Host header                    │ communication/http                                   │
+│ decode data using Base64 in .NET                      │ data-manipulation/encoding/base64                    │
+│ encode data using Base64                              │ data-manipulation/encoding/base64                    │
+│ hash data with MD5 (3 matches)                        │ data-manipulation/hashing/md5                        │
+│ generate random numbers in .NET (3 matches)           │ data-manipulation/prng                               │
+│ check file extension in .NET                          │ host-interaction/file-system                         │
+│ generate random filename in .NET (2 matches)          │ host-interaction/file-system                         │
+│ get common file path (2 matches)                      │ host-interaction/file-system                         │
+│ copy file (2 matches)                                 │ host-interaction/file-system/copy                    │
+│ delete directory                                      │ host-interaction/file-system/delete                  │
+│ delete file                                           │ host-interaction/file-system/delete                  │
+│ check if directory exists                             │ host-interaction/file-system/exists                  │
+│ check if file exists                                  │ host-interaction/file-system/exists                  │
+│ enumerate files in .NET (2 matches)                   │ host-interaction/file-system/files/list              │
+│ get file size                                         │ host-interaction/file-system/meta                    │
+│ set file attributes                                   │ host-interaction/file-system/meta                    │
+│ move file                                             │ host-interaction/file-system/move                    │
+│ read file on Windows                                  │ host-interaction/file-system/read                    │
+│ write file on Windows (2 matches)                     │ host-interaction/file-system/write                   │
+│ get number of processors                              │ host-interaction/hardware/cpu                        │
+│ get disk information                                  │ host-interaction/hardware/storage                    │
+│ get disk size                                         │ host-interaction/hardware/storage                    │
+│ create mutex                                          │ host-interaction/mutex                               │
+│ get hostname (2 matches)                              │ host-interaction/os/hostname                         │
+│ get OS version in .NET (2 matches)                    │ host-interaction/os/version                          │
+│ get process image filename (2 matches)                │ host-interaction/process                             │
+│ create a process with modified I/O handles and window │ host-interaction/process/create                      │
+│ create process on Windows                             │ host-interaction/process/create                      │
+│ enumerate processes                                   │ host-interaction/process/list                        │
+│ find process by PID                                   │ host-interaction/process/list                        │
+│ terminate process (2 matches)                         │ host-interaction/process/terminate                   │
+│ query or enumerate registry value (2 matches)         │ host-interaction/registry                            │
+│ set registry value (2 matches)                        │ host-interaction/registry/create                     │
+│ get session integrity level                           │ host-interaction/session                             │
+│ get session user name (3 matches)                     │ host-interaction/session                             │
+│ create thread (3 matches)                             │ host-interaction/thread/create                       │
+│ suspend thread (4 matches)                            │ host-interaction/thread/suspend                      │
+│ execute via timer in .NET                             │ host-interaction/thread/timer                        │
+│ access WMI data in .NET                               │ host-interaction/wmi                                 │
+│ load .NET assembly                                    │ load-code/dotnet                                     │
+│ unmanaged call (3 matches)                            │ runtime                                              │
+│ compiled to the .NET platform                         │ runtime/dotnet                                       │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

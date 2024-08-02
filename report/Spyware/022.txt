@@ -1,0 +1,47 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 74c84bdd77cff9a99903a0fbf1064537                                                                                                 │
+│ sha1                   │ 4212812ebdee91d578a07c648e2dbec558e42d94                                                                                         │
+│ sha256                 │ e6fcc25a9c1ea4e4eaaa11db04a89cfffe3bc2a0e7936509c1eb8dc5c244dcf0                                                                 │
+│ analysis               │ static                                                                                                                           │
+│ os                     │ any                                                                                                                              │
+│ format                 │ dotnet                                                                                                                           │
+│ arch                   │ i386                                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/crawl_malware_report/spyware/e6fcc25a9c1ea4e4eaaa11db04a89cfffe3bc2a0e7936509c1eb8dc5c244dcf0.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Reflective Code Loading T1620                                                      │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ CRYPTOGRAPHY                │ Cryptographic Hash::MD5 [C0029.001]                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Read File [C0051]                                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Registry::Set Registry Key [C0036.001]                                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Process [C0017]                                                        │
+│                             │ Suspend Thread [C0055]                                                        │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                                        │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ hash data with MD5                                                │ data-manipulation/hashing/md5                        │
+│ access .NET resource                                              │ executable/resource                                  │
+│ read .ini file (2 matches)                                        │ host-interaction/file-system/read                    │
+│ manipulate unmanaged memory in .NET (2 matches)                   │ host-interaction/memory                              │
+│ create a process with modified I/O handles and window (3 matches) │ host-interaction/process/create                      │
+│ create process on Windows (5 matches)                             │ host-interaction/process/create                      │
+│ set registry value                                                │ host-interaction/registry/create                     │
+│ suspend thread                                                    │ host-interaction/thread/suspend                      │
+│ load .NET assembly                                                │ load-code/dotnet                                     │
+│ unmanaged call (8 matches)                                        │ runtime                                              │
+│ compiled to the .NET platform                                     │ runtime/dotnet                                       │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

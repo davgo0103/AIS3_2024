@@ -1,0 +1,68 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 7dc4bd6b762dc2e36cb201282d419148                                                                                                 │
+│ sha1                   │ 704e8cb2dc1282dfc17bc0ed0326cfff943b693d                                                                                         │
+│ sha256                 │ 031ed94b13f6292ca38061ac20d5c784c6470d3f52b207a959bedf0ed12c0665                                                                 │
+│ analysis               │ static                                                                                                                           │
+│ os                     │ any                                                                                                                              │
+│ format                 │ dotnet                                                                                                                           │
+│ arch                   │ i386                                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/crawl_malware_report/spyware/031ed94b13f6292ca38061ac20d5c784c6470d3f52b207a959bedf0ed12c0665.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ COLLECTION             │ Screen Capture T1113                                                               │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION        │ File and Directory Permissions Modification T1222                                  │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ COLLECTION                  │ Screen Capture::WinAPI [E1113.m01]                                            │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COMMAND AND CONTROL         │ C2 Communication::Send Data [B0030.001]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COMMUNICATION               │ HTTP Communication::Create Request [C0002.012]                                │
+│                             │ HTTP Communication::Get Response [C0002.017]                                  │
+│                             │ HTTP Communication::Send Request [C0002.003]                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ CRYPTOGRAPHY                │ Generate Pseudo-random Sequence::Use API [C0021.003]                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ Analysis Tool Discovery::Process detection [B0013.001]                        │
+│                             │ File and Directory Discovery [E1083]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Create Directory [C0046]                                                      │
+│                             │ Delete File [C0047]                                                           │
+│                             │ Read File [C0051]                                                             │
+│                             │ Set File Attributes [C0050]                                                   │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Suspend Thread [C0055]                                                        │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ reference analysis tools strings                     │ anti-analysis                                        │
+│ save image in .NET                                   │ collection                                           │
+│ capture screenshot                                   │ collection/screenshot                                │
+│ send data                                            │ communication                                        │
+│ create HTTP request (3 matches)                      │ communication/http/client                            │
+│ receive HTTP response                                │ communication/http/client                            │
+│ generate random numbers in .NET                      │ data-manipulation/prng                               │
+│ contains PDB path                                    │ executable/pe/pdb                                    │
+│ access .NET resource                                 │ executable/resource                                  │
+│ create directory                                     │ host-interaction/file-system/create                  │
+│ delete file                                          │ host-interaction/file-system/delete                  │
+│ enumerate files in .NET (2 matches)                  │ host-interaction/file-system/files/list              │
+│ set file attributes                                  │ host-interaction/file-system/meta                    │
+│ read file on Windows                                 │ host-interaction/file-system/read                    │
+│ suspend thread                                       │ host-interaction/thread/suspend                      │
+│ execute via timer in .NET                            │ host-interaction/thread/timer                        │
+│ compiled to the .NET platform                        │ runtime/dotnet                                       │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

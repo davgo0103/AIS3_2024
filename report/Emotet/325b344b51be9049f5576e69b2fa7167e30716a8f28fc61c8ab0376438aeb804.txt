@@ -1,0 +1,68 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 0377a42c029579282f72d9dd2f76d01e                                                                               │
+│ sha1                   │ 12cec5fac04f36a9a0aadbf5e18a56d4e270cd63                                                                       │
+│ sha256                 │ 325b344b51be9049f5576e69b2fa7167e30716a8f28fc61c8ab0376438aeb804                                               │
+│ analysis               │ static                                                                                                         │
+│ os                     │ windows                                                                                                        │
+│ format                 │ pe                                                                                                             │
+│ arch                   │ i386                                                                                                           │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/Emotet/325b344b51be9049f5576e69b2fa7167e30716a8f28fc61c8ab0376438aeb804.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Reflective Code Loading T1620                                                      │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+│                        │ Process Discovery T1057                                                            │
+│                        │ System Information Discovery T1082                                                 │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Shared Modules T1129                                                               │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION             │ Hijack Execution Flow::Abuse Windows Function Calls [F0015.006]               │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Copy File [C0045]                                                             │
+│                             │ Delete Directory [C0048]                                                      │
+│                             │ Delete File [C0047]                                                           │
+│                             │ Get File Attributes [C0049]                                                   │
+│                             │ Move File [C0063]                                                             │
+│                             │ Read File [C0051]                                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ MEMORY                      │ Allocate Memory [C0007]                                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Console [C0033]                                                               │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ manipulate console buffer (3 matches)                │ host-interaction/console                             │
+│ query environment variable                           │ host-interaction/environment-variable                │
+│ get common file path (3 matches)                     │ host-interaction/file-system                         │
+│ copy file                                            │ host-interaction/file-system/copy                    │
+│ delete directory                                     │ host-interaction/file-system/delete                  │
+│ delete file                                          │ host-interaction/file-system/delete                  │
+│ enumerate files on Windows                           │ host-interaction/file-system/files/list              │
+│ get file attributes                                  │ host-interaction/file-system/meta                    │
+│ move file (3 matches)                                │ host-interaction/file-system/move                    │
+│ read .ini file                                       │ host-interaction/file-system/read                    │
+│ get process heap flags                               │ host-interaction/process                             │
+│ terminate process                                    │ host-interaction/process/terminate                   │
+│ access PEB ldr_data                                  │ linking/runtime-linking                              │
+│ link many functions at runtime                       │ linking/runtime-linking                              │
+│ linked against CPP standard library                  │ linking/static                                       │
+│ execute shellcode via Windows callback function      │ load-code/shellcode                                  │
+│ execute shellcode via indirect call                  │ load-code/shellcode                                  │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

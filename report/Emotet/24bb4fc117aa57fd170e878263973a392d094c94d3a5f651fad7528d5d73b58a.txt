@@ -1,0 +1,86 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 2d2b66d90495c1236f2e557172bf0f1c                                                                               │
+│ sha1                   │ a06d203ae9cbe26a3c2e389f1c361ac49ef54c08                                                                       │
+│ sha256                 │ 24bb4fc117aa57fd170e878263973a392d094c94d3a5f651fad7528d5d73b58a                                               │
+│ analysis               │ static                                                                                                         │
+│ os                     │ windows                                                                                                        │
+│ format                 │ pe                                                                                                             │
+│ arch                   │ i386                                                                                                           │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/Emotet/24bb4fc117aa57fd170e878263973a392d094c94d3a5f651fad7528d5d73b58a.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Obfuscated Files or Information T1027                                              │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+│                        │ Process Discovery T1057                                                            │
+│                        │ Software Discovery T1518                                                           │
+│                        │ System Information Discovery T1082                                                 │
+│                        │ System Location Discovery T1614                                                    │
+│                        │ System Location Discovery::System Language Discovery T1614.001                     │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Shared Modules T1129                                                               │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DATA                        │ Check String [C0019]                                                          │
+│                             │ Encode Data::Base64 [C0026.001]                                               │
+│                             │ Encode Data::XOR [C0026.002]                                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Delete File [C0047]                                                           │
+│                             │ Get File Attributes [C0049]                                                   │
+│                             │ Read File [C0051]                                                             │
+│                             │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Environment Variable::Set Variable [C0034.001]                                │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Allocate Thread Local Storage [C0040]                                         │
+│                             │ Create Process [C0017]                                                        │
+│                             │ Create Thread [C0038]                                                         │
+│                             │ Set Thread Local Storage Value [C0041]                                        │
+│                             │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ get geographical location (4 matches)                │ collection                                           │
+│ parse credit card information (2 matches)            │ collection/credit-card                               │
+│ encode data using Base64                             │ data-manipulation/encoding/base64                    │
+│ reference Base64 string                              │ data-manipulation/encoding/base64                    │
+│ encode data using XOR                                │ data-manipulation/encoding/xor                       │
+│ query environment variable (3 matches)               │ host-interaction/environment-variable                │
+│ set environment variable                             │ host-interaction/environment-variable                │
+│ delete file                                          │ host-interaction/file-system/delete                  │
+│ check if file exists (2 matches)                     │ host-interaction/file-system/exists                  │
+│ enumerate files recursively                          │ host-interaction/file-system/files/list              │
+│ get file attributes (2 matches)                      │ host-interaction/file-system/meta                    │
+│ get file size (2 matches)                            │ host-interaction/file-system/meta                    │
+│ read file on Windows (2 matches)                     │ host-interaction/file-system/read                    │
+│ write file on Windows (2 matches)                    │ host-interaction/file-system/write                   │
+│ get memory capacity                                  │ host-interaction/hardware/memory                     │
+│ get system information on Windows                    │ host-interaction/os/info                             │
+│ get thread local storage value                       │ host-interaction/process                             │
+│ create process on Windows                            │ host-interaction/process/create                      │
+│ enumerate processes                                  │ host-interaction/process/list                        │
+│ terminate process (2 matches)                        │ host-interaction/process/terminate                   │
+│ create thread (3 matches)                            │ host-interaction/thread/create                       │
+│ allocate thread local storage                        │ host-interaction/thread/tls                          │
+│ set thread local storage value                       │ host-interaction/thread/tls                          │
+│ link function at runtime on Windows (17 matches)     │ linking/runtime-linking                              │
+│ linked against CPP regex library                     │ linking/static/cppregex                              │
+│ parse PE header (2 matches)                          │ load-code/pe                                         │
+│ resolve function by parsing PE exports (3 matches)   │ load-code/pe                                         │
+│ identify system language via API (2 matches)         │ targeting/language                                   │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

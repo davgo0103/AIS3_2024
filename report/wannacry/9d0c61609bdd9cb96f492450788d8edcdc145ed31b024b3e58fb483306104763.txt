@@ -1,0 +1,71 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 37fe50e1cfa78a2fd309b4bbcdf103fa                                                                                 │
+│ sha1                   │ 4bd903fb2da092604e4c5e097da49f233f1eab83                                                                         │
+│ sha256                 │ 9582cab6180ca2eaeb42f0b34baecfab32eebd1e4cac254e89726dbc7029314f                                                 │
+│ analysis               │ static                                                                                                           │
+│ os                     │ any                                                                                                              │
+│ format                 │ dotnet                                                                                                           │
+│ arch                   │ i386                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/wannacry/9d0c61609bdd9cb96f492450788d8edcdc145ed31b024b3e58fb483306104763.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Indicator Removal::File Deletion T1070.004                                         │
+│                        │ Obfuscated Files or Information T1027                                              │
+│                        │ Virtualization/Sandbox Evasion::System Checks T1497.001                            │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ Account Discovery T1087                                                            │
+│                        │ File and Directory Discovery T1083                                                 │
+│                        │ System Owner/User Discovery T1033                                                  │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ IMPACT                 │ Inhibit System Recovery T1490                                                      │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ ANTI-BEHAVIORAL ANALYSIS    │ Virtual Machine Detection [B0009]                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Check String [C0019]                                                          │
+│                             │ Compression Library [C0060]                                                   │
+│                             │ Encode Data::Base64 [C0026.001]                                               │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ Analysis Tool Discovery::Process detection [B0013.001]                        │
+│                             │ File and Directory Discovery [E1083]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Copy File [C0045]                                                             │
+│                             │ Read File [C0051]                                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ IMPACT                      │ Data Destruction::Delete Shadow Copies [E1485.m04]                            │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Process [C0017]                                                        │
+│                             │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                            │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ reference analysis tools strings                      │ anti-analysis                                        │
+│ reference anti-VM strings targeting VMWare            │ anti-analysis/anti-vm/vm-detection                   │
+│ reference Base64 string                               │ data-manipulation/encoding/base64                    │
+│ contains PDB path                                     │ executable/pe/pdb                                    │
+│ enumerate drives                                      │ host-interaction/file-system                         │
+│ get common file path                                  │ host-interaction/file-system                         │
+│ copy file                                             │ host-interaction/file-system/copy                    │
+│ check if file exists                                  │ host-interaction/file-system/exists                  │
+│ enumerate files in .NET                               │ host-interaction/file-system/files/list              │
+│ read file on Windows                                  │ host-interaction/file-system/read                    │
+│ create a process with modified I/O handles and window │ host-interaction/process/create                      │
+│ create process on Windows                             │ host-interaction/process/create                      │
+│ terminate process                                     │ host-interaction/process/terminate                   │
+│ get session user name                                 │ host-interaction/session                             │
+│ delete volume shadow copies                           │ impact/inhibit-system-recovery                       │
+│ linked against CPP standard library                   │ linking/static                                       │
+│ linked against ZLIB                                   │ linking/static/zlib                                  │
+│ unmanaged call                                        │ runtime                                              │
+│ compiled to the .NET platform                         │ runtime/dotnet                                       │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

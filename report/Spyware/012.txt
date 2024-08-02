@@ -1,0 +1,83 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 30bd4415b8698b02c6e39bd8f5343115                                                                                                 │
+│ sha1                   │ 3541170096377e396d8991c0dbc128680e7365fd                                                                                         │
+│ sha256                 │ 46e43f0806085da66f4d9bcb7391a618977f5f9a0c6b612e2e02ba6b8e9d1011                                                                 │
+│ analysis               │ static                                                                                                                           │
+│ os                     │ windows                                                                                                                          │
+│ format                 │ pe                                                                                                                               │
+│ arch                   │ i386                                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/crawl_malware_report/spyware/46e43f0806085da66f4d9bcb7391a618977f5f9a0c6b612e2e02ba6b8e9d1011.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ COLLECTION             │ Screen Capture T1113                                                               │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION        │ Obfuscated Files or Information T1027                                              │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+│                        │ Query Registry T1012                                                               │
+│                        │ System Information Discovery T1082                                                 │
+│                        │ System Location Discovery T1614                                                    │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Command and Scripting Interpreter T1059                                            │
+│                        │ Shared Modules T1129                                                               │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ COLLECTION                  │ Screen Capture::WinAPI [E1113.m01]                                            │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ CRYPTOGRAPHY                │ Generate Pseudo-random Sequence [C0021]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Check String [C0019]                                                          │
+│                             │ Encode Data::Base64 [C0026.001]                                               │
+│                             │ Encode Data::XOR [C0026.002]                                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Custom Algorithm [E1027.m03]        │
+│                             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION                   │ Command and Scripting Interpreter [E1059]                                     │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Copy File [C0045]                                                             │
+│                             │ Create Directory [C0046]                                                      │
+│                             │ Delete File [C0047]                                                           │
+│                             │ Get File Attributes [C0049]                                                   │
+│                             │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Registry::Query Registry Key [C0036.005]                                      │
+│                             │ Registry::Query Registry Value [C0036.006]                                    │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ get geographical location (2 matches)                │ collection                                           │
+│ capture screenshot                                   │ collection/screenshot                                │
+│ compiled with Borland Delphi                         │ compiler/delphi                                      │
+│ encode data using ADD XOR SUB operations             │ data-manipulation/encoding                           │
+│ reference Base64 string                              │ data-manipulation/encoding/base64                    │
+│ encode data using XOR (2 matches)                    │ data-manipulation/encoding/xor                       │
+│ generate random numbers using the Delphi LCG         │ data-manipulation/prng/lcg                           │
+│ accept command line arguments                        │ host-interaction/cli                                 │
+│ copy file (8 matches)                                │ host-interaction/file-system/copy                    │
+│ create directory (2 matches)                         │ host-interaction/file-system/create                  │
+│ delete file (8 matches)                              │ host-interaction/file-system/delete                  │
+│ check if file exists (3 matches)                     │ host-interaction/file-system/exists                  │
+│ enumerate files on Windows (6 matches)               │ host-interaction/file-system/files/list              │
+│ get file attributes (6 matches)                      │ host-interaction/file-system/meta                    │
+│ write file on Windows (2 matches)                    │ host-interaction/file-system/write                   │
+│ get number of processors                             │ host-interaction/hardware/cpu                        │
+│ get system information on Windows (3 matches)        │ host-interaction/os/info                             │
+│ query or enumerate registry key                      │ host-interaction/registry                            │
+│ query or enumerate registry value                    │ host-interaction/registry                            │
+│ access PEB ldr_data                                  │ linking/runtime-linking                              │
+│ link many functions at runtime (6 matches)           │ linking/runtime-linking                              │
+│ parse PE header (4 matches)                          │ load-code/pe                                         │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

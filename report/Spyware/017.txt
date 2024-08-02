@@ -1,0 +1,83 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 29404c47f7fdab045b3ec0404563a03d                                                                                                 │
+│ sha1                   │ 04a8cb67707728a82df5d8193647ab01761d061c                                                                                         │
+│ sha256                 │ 82b53444cb1607da0d82f371e6976f765a236a1468e88f6385ee24f2e6f5d1bb                                                                 │
+│ analysis               │ static                                                                                                                           │
+│ os                     │ windows                                                                                                                          │
+│ format                 │ pe                                                                                                                               │
+│ arch                   │ amd64                                                                                                                            │
+│ path                   │ C:/Users/Administrator/Desktop/crawl_malware_report/spyware/82b53444cb1607da0d82f371e6976f765a236a1468e88f6385ee24f2e6f5d1bb.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Obfuscated Files or Information T1027                                              │
+│                        │ Virtualization/Sandbox Evasion::System Checks T1497.001                            │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+│                        │ System Information Discovery T1082                                                 │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Command and Scripting Interpreter T1059                                            │
+│                        │ Shared Modules T1129                                                               │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ ANTI-BEHAVIORAL ANALYSIS    │ Virtual Machine Detection [B0009]                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Checksum::Adler [C0032.005]                                                   │
+│                             │ Compress Data [C0024]                                                         │
+│                             │ Compression Library [C0060]                                                   │
+│                             │ Encode Data::XOR [C0026.002]                                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ Analysis Tool Discovery::Process detection [B0013.001]                        │
+│                             │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION                   │ Command and Scripting Interpreter [E1059]                                     │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Create Directory [C0046]                                                      │
+│                             │ Delete Directory [C0048]                                                      │
+│                             │ Delete File [C0047]                                                           │
+│                             │ Read File [C0051]                                                             │
+│                             │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Environment Variable::Set Variable [C0034.001]                                │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Process [C0017]                                                        │
+│                             │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ reference analysis tools strings                     │ anti-analysis                                        │
+│ reference anti-VM strings targeting Xen              │ anti-analysis/anti-vm/vm-detection                   │
+│ compute adler32 checksum                             │ data-manipulation/checksum/adler32                   │
+│ compress data via ZLIB inflate or deflate            │ data-manipulation/compression                        │
+│ encode data using XOR (6 matches)                    │ data-manipulation/encoding/xor                       │
+│ accept command line arguments                        │ host-interaction/cli                                 │
+│ query environment variable (4 matches)               │ host-interaction/environment-variable                │
+│ set environment variable (4 matches)                 │ host-interaction/environment-variable                │
+│ get common file path                                 │ host-interaction/file-system                         │
+│ create directory (2 matches)                         │ host-interaction/file-system/create                  │
+│ delete directory                                     │ host-interaction/file-system/delete                  │
+│ delete file                                          │ host-interaction/file-system/delete                  │
+│ enumerate files on Windows                           │ host-interaction/file-system/files/list              │
+│ get file size                                        │ host-interaction/file-system/meta                    │
+│ read file on Windows (9 matches)                     │ host-interaction/file-system/read                    │
+│ write file on Windows (2 matches)                    │ host-interaction/file-system/write                   │
+│ get disk information (2 matches)                     │ host-interaction/hardware/storage                    │
+│ create process on Windows                            │ host-interaction/process/create                      │
+│ terminate process                                    │ host-interaction/process/terminate                   │
+│ link many functions at runtime (3 matches)           │ linking/runtime-linking                              │
+│ linked against ZLIB                                  │ linking/static/zlib                                  │
+│ parse PE header (2 matches)                          │ load-code/pe                                         │
+│ resolve function by parsing PE exports               │ load-code/pe                                         │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

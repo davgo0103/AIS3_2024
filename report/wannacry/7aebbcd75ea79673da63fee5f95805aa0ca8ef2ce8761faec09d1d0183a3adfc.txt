@@ -1,0 +1,118 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 4ae2a9a090d594271dc2b28b52fa41ad                                                                                 │
+│ sha1                   │ 55c3f9bc95f7d8b2324fb7cf142f78a92c2b5cee                                                                         │
+│ sha256                 │ 7aebbcd75ea79673da63fee5f95805aa0ca8ef2ce8761faec09d1d0183a3adfc                                                 │
+│ analysis               │ static                                                                                                           │
+│ os                     │ windows                                                                                                          │
+│ format                 │ pe                                                                                                               │
+│ arch                   │ i386                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/wannacry/7aebbcd75ea79673da63fee5f95805aa0ca8ef2ce8761faec09d1d0183a3adfc.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ COLLECTION             │ Clipboard Data T1115                                                               │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION        │ Hide Artifacts::Hidden Window T1564.003                                            │
+│                        │ Indicator Removal::Timestomp T1070.006                                             │
+│                        │ Obfuscated Files or Information T1027                                              │
+│                        │ Obfuscated Files or Information::Indicator Removal from Tools T1027.005            │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ Account Discovery T1087                                                            │
+│                        │ Application Window Discovery T1010                                                 │
+│                        │ File and Directory Discovery T1083                                                 │
+│                        │ System Information Discovery T1082                                                 │
+│                        │ System Location Discovery T1614                                                    │
+│                        │ System Location Discovery::System Language Discovery T1614.001                     │
+│                        │ System Owner/User Discovery T1033                                                  │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Shared Modules T1129                                                               │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ ANTI-STATIC ANALYSIS        │ Executable Code Obfuscation::Argument Obfuscation [B0032.020]                 │
+│                             │ Executable Code Obfuscation::Stack Strings [B0032.017]                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COMMAND AND CONTROL         │ C2 Communication::Receive Data [B0030.002]                                    │
+│                             │ C2 Communication::Send Data [B0030.001]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COMMUNICATION               │ HTTP Communication::Download URL [C0002.006]                                  │
+│                             │ Socket Communication::Send Data [C0001.007]                                   │
+│                             │ Socket Communication::Set Socket Config [C0001.001]                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ CRYPTOGRAPHY                │ Encrypt Data::AES [C0027.001]                                                 │
+│                             │ Encrypt Data::RC4 [C0027.009]                                                 │
+│                             │ Encryption Key::RC4 KSA [C0028.002]                                           │
+│                             │ Generate Pseudo-random Sequence [C0021]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Checksum::CRC32 [C0032.001]                                                   │
+│                             │ Compression Library [C0060]                                                   │
+│                             │ Encode Data::XOR [C0026.002]                                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+│                             │ Obfuscated Files or Information::Encryption-Standard Algorithm [E1027.m05]    │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Copy File [C0045]                                                             │
+│                             │ Create Directory [C0046]                                                      │
+│                             │ Delete File [C0047]                                                           │
+│                             │ Get File Attributes [C0049]                                                   │
+│                             │ Read File [C0051]                                                             │
+│                             │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ IMPACT                      │ Clipboard Modification [E1510]                                                │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Process [C0017]                                                        │
+│                             │ Create Thread [C0038]                                                         │
+│                             │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ timestomp file                                       │ anti-analysis/anti-forensic/timestomp                │
+│ contain obfuscated stackstrings (2 matches)          │ anti-analysis/obfuscation/string/stackstring         │
+│ get geographical location                            │ collection                                           │
+│ receive data                                         │ communication                                        │
+│ send data                                            │ communication                                        │
+│ set socket configuration                             │ communication/socket                                 │
+│ hash data with CRC32 (2 matches)                     │ data-manipulation/checksum/crc32                     │
+│ encode data using XOR (16 matches)                   │ data-manipulation/encoding/xor                       │
+│ encrypt data using AES (5 matches)                   │ data-manipulation/encryption/aes                     │
+│ reference AES constants (5 matches)                  │ data-manipulation/encryption/aes                     │
+│ encrypt data using RC4 KSA (3 matches)               │ data-manipulation/encryption/rc4                     │
+│ generate random numbers using the Delphi LCG         │ data-manipulation/prng/lcg                           │
+│ write clipboard data                                 │ host-interaction/clipboard                           │
+│ get common file path (3 matches)                     │ host-interaction/file-system                         │
+│ copy file (2 matches)                                │ host-interaction/file-system/copy                    │
+│ create directory (3 matches)                         │ host-interaction/file-system/create                  │
+│ delete file (3 matches)                              │ host-interaction/file-system/delete                  │
+│ check if file exists (3 matches)                     │ host-interaction/file-system/exists                  │
+│ enumerate files on Windows (2 matches)               │ host-interaction/file-system/files/list              │
+│ get file attributes (7 matches)                      │ host-interaction/file-system/meta                    │
+│ get file size                                        │ host-interaction/file-system/meta                    │
+│ read file on Windows (8 matches)                     │ host-interaction/file-system/read                    │
+│ write file on Windows (3 matches)                    │ host-interaction/file-system/write                   │
+│ find graphical window                                │ host-interaction/gui/window/find                     │
+│ hide graphical window                                │ host-interaction/gui/window/hide                     │
+│ get disk information                                 │ host-interaction/hardware/storage                    │
+│ get disk size                                        │ host-interaction/hardware/storage                    │
+│ get hostname                                         │ host-interaction/os/hostname                         │
+│ create process on Windows (5 matches)                │ host-interaction/process/create                      │
+│ terminate process (2 matches)                        │ host-interaction/process/terminate                   │
+│ get session user name                                │ host-interaction/session                             │
+│ get token membership                                 │ host-interaction/session                             │
+│ create thread                                        │ host-interaction/thread/create                       │
+│ access PEB ldr_data (4 matches)                      │ linking/runtime-linking                              │
+│ link many functions at runtime (2 matches)           │ linking/runtime-linking                              │
+│ linked against ZLIB                                  │ linking/static/zlib                                  │
+│ resolve function by parsing PE exports (2 matches)   │ load-code/pe                                         │
+│ identify system language via API                     │ targeting/language                                   │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

@@ -1,0 +1,14 @@
+/*
+*.json
+*.csv
+!/.gitignore
+!/README.md
+!/capa.exe
+!/dlFinal.py
+!/dwn1.py
+!/report.txt
+!/sim.py
+!/simclus.py
+!/simnum.py
+!/toJSON.py
+!/report

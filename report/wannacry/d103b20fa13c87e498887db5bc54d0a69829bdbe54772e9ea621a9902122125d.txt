@@ -1,0 +1,54 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 27e65e2ed2b8c532d2fdafbf923b9a68                                                                                 │
+│ sha1                   │ 14f31d8d531467ff48ad4ab77c2081a481c7c09e                                                                         │
+│ sha256                 │ d103b20fa13c87e498887db5bc54d0a69829bdbe54772e9ea621a9902122125d                                                 │
+│ analysis               │ static                                                                                                           │
+│ os                     │ any                                                                                                              │
+│ format                 │ dotnet                                                                                                           │
+│ arch                   │ any                                                                                                              │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/wannacry/d103b20fa13c87e498887db5bc54d0a69829bdbe54772e9ea621a9902122125d.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Create Directory [C0046]                                                      │
+│                             │ Delete Directory [C0048]                                                      │
+│                             │ Move File [C0063]                                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ IMPACT                      │ Clipboard Modification [E1510]                                                │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Wallpaper [C0035]                                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Process [C0017]                                                        │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ save image in .NET                                   │ collection                                           │
+│ contains PDB path                                    │ executable/pe/pdb                                    │
+│ access .NET resource                                 │ executable/resource                                  │
+│ write clipboard data                                 │ host-interaction/clipboard                           │
+│ check file extension in .NET                         │ host-interaction/file-system                         │
+│ get common file path                                 │ host-interaction/file-system                         │
+│ create directory                                     │ host-interaction/file-system/create                  │
+│ delete directory                                     │ host-interaction/file-system/delete                  │
+│ check if directory exists                            │ host-interaction/file-system/exists                  │
+│ enumerate files in .NET                              │ host-interaction/file-system/files/list              │
+│ move file                                            │ host-interaction/file-system/move                    │
+│ change the wallpaper                                 │ host-interaction/gui/session                         │
+│ create process on Windows (3 matches)                │ host-interaction/process/create                      │
+│ unmanaged call                                       │ runtime                                              │
+│ compiled to the .NET platform                        │ runtime/dotnet                                       │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

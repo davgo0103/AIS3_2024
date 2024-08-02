@@ -1,0 +1,101 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 20ac127bdb26266846ca633f19d59e1f                                                                                 │
+│ sha1                   │ 597945b52157b59be6281ec952f4d95b48e6948f                                                                         │
+│ sha256                 │ 6c9bab5bb6cf0bcd2b7513475eeab9af78473f6c888737ff3ff464f27b86b292                                                 │
+│ analysis               │ static                                                                                                           │
+│ os                     │ windows                                                                                                          │
+│ format                 │ pe                                                                                                               │
+│ arch                   │ i386                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/wannacry/6a8216196347a0a8e4c92b7aa1fba290e76943712b74c78a668f992948883422.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Obfuscated Files or Information::Indicator Removal from Tools T1027.005            │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+│                        │ System Information Discovery T1082                                                 │
+│                        │ System Network Configuration Discovery T1016                                       │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Shared Modules T1129                                                               │
+│                        │ System Services::Service Execution T1569.002                                       │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ PERSISTENCE            │ Create or Modify System Process::Windows Service T1543.003                         │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ ANTI-BEHAVIORAL ANALYSIS    │ Conditional Execution::Runs as Service [B0025.007]                            │
+│                             │ Debugger Detection::Timing/Delay Check QueryPerformanceCounter [B0001.033]    │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ ANTI-STATIC ANALYSIS        │ Executable Code Obfuscation::Argument Obfuscation [B0032.020]                 │
+│                             │ Executable Code Obfuscation::Stack Strings [B0032.017]                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COMMAND AND CONTROL         │ C2 Communication::Receive Data [B0030.002]                                    │
+│                             │ C2 Communication::Send Data [B0030.001]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ COMMUNICATION               │ HTTP Communication::Create Request [C0002.012]                                │
+│                             │ HTTP Communication::Open URL [C0002.004]                                      │
+│                             │ Socket Communication::Connect Socket [C0001.004]                              │
+│                             │ Socket Communication::Create TCP Socket [C0001.011]                           │
+│                             │ Socket Communication::Create UDP Socket [C0001.010]                           │
+│                             │ Socket Communication::Get Socket Status [C0001.012]                           │
+│                             │ Socket Communication::Initialize Winsock Library [C0001.009]                  │
+│                             │ Socket Communication::Receive Data [C0001.006]                                │
+│                             │ Socket Communication::Send Data [C0001.007]                                   │
+│                             │ Socket Communication::Set Socket Config [C0001.001]                           │
+│                             │ Socket Communication::TCP Client [C0001.008]                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ CRYPTOGRAPHY                │ Generate Pseudo-random Sequence::Use API [C0021.003]                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Compression Library [C0060]                                                   │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ Code Discovery::Inspect Section Memory Permissions [B0046.002]                │
+│                             │ File and Directory Discovery [E1083]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION                   │ Install Additional Program [B0023]                                            │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Move File [C0063]                                                             │
+│                             │ Read File [C0051]                                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Thread [C0038]                                                         │
+│                             │ Terminate Process [C0018]                                                     │
+│                             │ Terminate Thread [C0039]                                                      │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ check for time delay via QueryPerformanceCounter     │ anti-analysis/anti-debugging/debugger-detection      │
+│ contain obfuscated stackstrings                      │ anti-analysis/obfuscation/string/stackstring         │
+│ receive data (5 matches)                             │ communication                                        │
+│ send data (5 matches)                                │ communication                                        │
+│ connect to URL                                       │ communication/http/client                            │
+│ get socket status                                    │ communication/socket                                 │
+│ initialize Winsock library                           │ communication/socket                                 │
+│ set socket configuration                             │ communication/socket                                 │
+│ create UDP socket (4 matches)                        │ communication/socket/udp/send                        │
+│ act as TCP client                                    │ communication/tcp/client                             │
+│ generate random numbers via WinAPI                   │ data-manipulation/prng                               │
+│ extract resource via kernel32 functions              │ executable/resource                                  │
+│ contain an embedded PE file                          │ executable/subfile/pe                                │
+│ get file size                                        │ host-interaction/file-system/meta                    │
+│ move file                                            │ host-interaction/file-system/move                    │
+│ read file on Windows                                 │ host-interaction/file-system/read                    │
+│ get number of processors                             │ host-interaction/hardware/cpu                        │
+│ terminate process                                    │ host-interaction/process/terminate                   │
+│ run as service                                       │ host-interaction/service                             │
+│ create service                                       │ host-interaction/service/create                      │
+│ modify service                                       │ host-interaction/service/modify                      │
+│ start service                                        │ host-interaction/service/start                       │
+│ create thread (4 matches)                            │ host-interaction/thread/create                       │
+│ terminate thread                                     │ host-interaction/thread/terminate                    │
+│ link function at runtime on Windows (4 matches)      │ linking/runtime-linking                              │
+│ linked against ZLIB                                  │ linking/static/zlib                                  │
+│ inspect section memory permissions                   │ load-code/pe                                         │
+│ persist via Windows service                          │ persistence/service                                  │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

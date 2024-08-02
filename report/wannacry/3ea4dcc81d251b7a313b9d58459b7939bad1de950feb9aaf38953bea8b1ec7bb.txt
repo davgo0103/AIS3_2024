@@ -1,0 +1,116 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 9c96b270974e2c85acb6fe1f888f5254                                                                                 │
+│ sha1                   │ 23bbb4806eeba02ee9420c76884572b47f138daa                                                                         │
+│ sha256                 │ 3ea4dcc81d251b7a313b9d58459b7939bad1de950feb9aaf38953bea8b1ec7bb                                                 │
+│ analysis               │ static                                                                                                           │
+│ os                     │ any                                                                                                              │
+│ format                 │ dotnet                                                                                                           │
+│ arch                   │ any                                                                                                              │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/wannacry/3ea4dcc81d251b7a313b9d58459b7939bad1de950feb9aaf38953bea8b1ec7bb.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ COLLECTION             │ Clipboard Data T1115                                                               │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION        │ Deobfuscate/Decode Files or Information T1140                                      │
+│                        │ File and Directory Permissions Modification T1222                                  │
+│                        │ Indicator Removal::File Deletion T1070.004                                         │
+│                        │ Obfuscated Files or Information T1027                                              │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ Account Discovery T1087                                                            │
+│                        │ File and Directory Discovery T1083                                                 │
+│                        │ Process Discovery T1057                                                            │
+│                        │ Query Registry T1012                                                               │
+│                        │ Software Discovery T1518                                                           │
+│                        │ System Owner/User Discovery T1033                                                  │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ IMPACT                 │ Inhibit System Recovery T1490                                                      │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ PERSISTENCE            │ Boot or Logon Autostart Execution::Registry Run Keys / Startup Folder T1547.001    │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MAEC Category               │ MAEC Value                                                                    │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ malware-category            │ launcher                                                                      │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ CRYPTOGRAPHY                │ Encrypt Data::AES [C0027.001]                                                 │
+│                             │ Encrypt Data::RSA [C0027.011]                                                 │
+│                             │ Generate Pseudo-random Sequence::Use API [C0021.003]                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Decode Data::Base64 [C0053.001]                                               │
+│                             │ Encode Data::Base64 [C0026.001]                                               │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+│                             │ Obfuscated Files or Information::Encryption-Standard Algorithm [E1027.m05]    │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ File and Directory Discovery [E1083]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Copy File [C0045]                                                             │
+│                             │ Delete File [C0047]                                                           │
+│                             │ Move File [C0063]                                                             │
+│                             │ Read File [C0051]                                                             │
+│                             │ Set File Attributes [C0050]                                                   │
+│                             │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ IMPACT                      │ Clipboard Modification [E1510]                                                │
+│                             │ Data Destruction::Delete Shadow Copies [E1485.m04]                            │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Registry::Query Registry Key [C0036.005]                                      │
+│                             │ Registry::Set Registry Key [C0036.001]                                        │
+│                             │ Wallpaper [C0035]                                                             │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PERSISTENCE                 │ Registry Run Keys / Startup Folder [F0012]                                    │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Create Process [C0017]                                                        │
+│                             │ Create Thread [C0038]                                                         │
+│                             │ Suspend Thread [C0055]                                                        │
+│                             │ Terminate Process [C0018]                                                     │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                                        │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ decode data using Base64 in .NET                                  │ data-manipulation/encoding/base64                    │
+│ encode data using Base64 (4 matches)                              │ data-manipulation/encoding/base64                    │
+│ encrypt data using AES via .NET                                   │ data-manipulation/encryption/aes                     │
+│ encrypt data using RSA                                            │ data-manipulation/encryption/rsa                     │
+│ generate random numbers in .NET (5 matches)                       │ data-manipulation/prng                               │
+│ find data using regex in .NET (3 matches)                         │ data-manipulation/regex                              │
+│ monitor clipboard content                                         │ host-interaction/clipboard                           │
+│ read clipboard data                                               │ host-interaction/clipboard                           │
+│ write clipboard data                                              │ host-interaction/clipboard                           │
+│ check file extension in .NET                                      │ host-interaction/file-system                         │
+│ enumerate drives (2 matches)                                      │ host-interaction/file-system                         │
+│ get common file path (6 matches)                                  │ host-interaction/file-system                         │
+│ copy file (3 matches)                                             │ host-interaction/file-system/copy                    │
+│ delete file (2 matches)                                           │ host-interaction/file-system/delete                  │
+│ check if file exists (3 matches)                                  │ host-interaction/file-system/exists                  │
+│ enumerate files in .NET                                           │ host-interaction/file-system/files/list              │
+│ get file size                                                     │ host-interaction/file-system/meta                    │
+│ set file attributes                                               │ host-interaction/file-system/meta                    │
+│ move file (2 matches)                                             │ host-interaction/file-system/move                    │
+│ read file on Windows                                              │ host-interaction/file-system/read                    │
+│ write file on Windows (4 matches)                                 │ host-interaction/file-system/write                   │
+│ change the wallpaper                                              │ host-interaction/gui/session                         │
+│ create a process with modified I/O handles and window (3 matches) │ host-interaction/process/create                      │
+│ create process on Windows (4 matches)                             │ host-interaction/process/create                      │
+│ enumerate processes                                               │ host-interaction/process/list                        │
+│ enumerate process modules                                         │ host-interaction/process/modules/list                │
+│ terminate process (4 matches)                                     │ host-interaction/process/terminate                   │
+│ query or enumerate registry key                                   │ host-interaction/registry                            │
+│ get session user name                                             │ host-interaction/session                             │
+│ create thread (3 matches)                                         │ host-interaction/thread/create                       │
+│ suspend thread (4 matches)                                        │ host-interaction/thread/suspend                      │
+│ delete volume shadow copies                                       │ impact/inhibit-system-recovery                       │
+│ persist via Run registry key                                      │ persistence/registry/run                             │
+│ unmanaged call (2 matches)                                        │ runtime                                              │
+│ compiled to the .NET platform                                     │ runtime/dotnet                                       │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

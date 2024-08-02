@@ -1,0 +1,126 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 694efccf0c905305f5c8418499fe335c                                                                                                 │
+│ sha1                   │ 1fa42976df8d8b1848ac2d99468da3c17785d285                                                                                         │
+│ sha256                 │ 7f3bfd0cc61218f8b5bff0850eb3cc9d5eadd7e735f9c0faf1224972c99e253b                                                                 │
+│ analysis               │ static                                                                                                                           │
+│ os                     │ windows                                                                                                                          │
+│ format                 │ pe                                                                                                                               │
+│ arch                   │ i386                                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/crawl_malware_report/spyware/7f3bfd0cc61218f8b5bff0850eb3cc9d5eadd7e735f9c0faf1224972c99e253b.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ File and Directory Permissions Modification T1222                                  │
+│                        │ Hide Artifacts::Hidden Window T1564.003                                            │
+│                        │ Indicator Removal T1070                                                            │
+│                        │ Indicator Removal::File Deletion T1070.004                                         │
+│                        │ Indicator Removal::Timestomp T1070.006                                             │
+│                        │ Modify Registry T1112                                                              │
+│                        │ Obfuscated Files or Information T1027                                              │
+│                        │ Subvert Trust Controls::Mark-of-the-Web Bypass T1553.005                           │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+│                        │ Process Discovery T1057                                                            │
+│                        │ Software Discovery T1518                                                           │
+│                        │ System Information Discovery T1082                                                 │
+│                        │ System Owner/User Discovery T1033                                                  │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Command and Scripting Interpreter T1059                                            │
+│                        │ Shared Modules T1129                                                               │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ IMPACT                 │ Inhibit System Recovery T1490                                                      │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ PERSISTENCE            │ Boot or Logon Autostart Execution::Registry Run Keys / Startup Folder T1547.001    │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ CRYPTOGRAPHY                │ Cryptographic Hash [C0029]                                                    │
+│                             │ Decrypt Data [C0031]                                                          │
+│                             │ Encrypt Data [C0027]                                                          │
+│                             │ Encrypt Data::AES [C0027.001]                                                 │
+│                             │ Encryption Key [C0028]                                                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encryption-Standard Algorithm [E1027.m05]    │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ Application Window Discovery [E1010]                                          │
+│                             │ File and Directory Discovery [E1083]                                          │
+│                             │ System Information Discovery [E1082]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION                   │ Command and Scripting Interpreter [E1059]                                     │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Copy File [C0045]                                                             │
+│                             │ Delete File [C0047]                                                           │
+│                             │ Get File Attributes [C0049]                                                   │
+│                             │ Move File [C0063]                                                             │
+│                             │ Read File [C0051]                                                             │
+│                             │ Set File Attributes [C0050]                                                   │
+│                             │ Writes File [C0052]                                                           │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ IMPACT                      │ Data Destruction::Delete Shadow Copies [E1485.m04]                            │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ MEMORY                      │ Allocate Memory [C0007]                                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ OPERATING SYSTEM            │ Registry::Delete Registry Value [C0036.007]                                   │
+│                             │ Registry::Set Registry Key [C0036.001]                                        │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PERSISTENCE                 │ Registry Run Keys / Startup Folder [F0012]                                    │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ PROCESS                     │ Check Mutex [C0043]                                                           │
+│                             │ Create Mutex [C0042]                                                          │
+│                             │ Create Process [C0017]                                                        │
+│                             │ Create Process::Create Suspended Process [C0017.003]                          │
+│                             │ Create Thread [C0038]                                                         │
+│                             │ Terminate Process [C0018]                                                     │
+│                             │ Terminate Thread [C0039]                                                      │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ impersonate file version information                 │ anti-analysis/anti-forensic                          │
+│ timestomp file (2 matches)                           │ anti-analysis/anti-forensic/timestomp                │
+│ create new key via CryptAcquireContext               │ data-manipulation/encryption                         │
+│ encrypt or decrypt via WinCrypt                      │ data-manipulation/encryption                         │
+│ encrypt data using AES via WinAPI                    │ data-manipulation/encryption/aes                     │
+│ hash data via WinCrypt                               │ data-manipulation/hashing                            │
+│ initialize hashing via WinCrypt                      │ data-manipulation/hashing                            │
+│ extract resource via kernel32 functions              │ executable/resource                                  │
+│ accept command line arguments                        │ host-interaction/cli                                 │
+│ query environment variable (5 matches)               │ host-interaction/environment-variable                │
+│ bypass Mark of the Web                               │ host-interaction/file-system                         │
+│ copy file                                            │ host-interaction/file-system/copy                    │
+│ delete file (3 matches)                              │ host-interaction/file-system/delete                  │
+│ check if file exists                                 │ host-interaction/file-system/exists                  │
+│ enumerate files recursively                          │ host-interaction/file-system/files/list              │
+│ get file attributes                                  │ host-interaction/file-system/meta                    │
+│ get file size                                        │ host-interaction/file-system/meta                    │
+│ set file attributes (2 matches)                      │ host-interaction/file-system/meta                    │
+│ move file                                            │ host-interaction/file-system/move                    │
+│ read file on Windows                                 │ host-interaction/file-system/read                    │
+│ write file on Windows (2 matches)                    │ host-interaction/file-system/write                   │
+│ get graphical window text                            │ host-interaction/gui/window/get-text                 │
+│ hide graphical window (2 matches)                    │ host-interaction/gui/window/hide                     │
+│ get number of processors                             │ host-interaction/hardware/cpu                        │
+│ get disk information                                 │ host-interaction/hardware/storage                    │
+│ print debug messages                                 │ host-interaction/log/debug/write-event               │
+│ check mutex and exit                                 │ host-interaction/mutex                               │
+│ create process on Windows                            │ host-interaction/process/create                      │
+│ create process suspended                             │ host-interaction/process/create                      │
+│ enumerate processes                                  │ host-interaction/process/list                        │
+│ terminate process (3 matches)                        │ host-interaction/process/terminate                   │
+│ delete registry value                                │ host-interaction/registry/delete                     │
+│ get session information                              │ host-interaction/session                             │
+│ create thread (3 matches)                            │ host-interaction/thread/create                       │
+│ terminate thread                                     │ host-interaction/thread/terminate                    │
+│ delete volume shadow copies                          │ impact/inhibit-system-recovery                       │
+│ link function at runtime on Windows                  │ linking/runtime-linking                              │
+│ resolve function by parsing PE exports               │ load-code/pe                                         │
+│ execute shellcode via indirect call                  │ load-code/shellcode                                  │
+│ persist via Run registry key (3 matches)             │ persistence/registry/run                             │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+

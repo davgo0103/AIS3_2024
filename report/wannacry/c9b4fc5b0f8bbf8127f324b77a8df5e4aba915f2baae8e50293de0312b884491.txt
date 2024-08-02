@@ -1,0 +1,2 @@
+KeyboardInterrupt detected, program terminated
+[3596] Failed to execute script 'main' due to unhandled exception!

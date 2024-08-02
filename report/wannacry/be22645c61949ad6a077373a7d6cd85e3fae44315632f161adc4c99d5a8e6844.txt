@@ -1,0 +1,77 @@
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ md5                    │ 5c7fb0927db37372da25f270708103a2                                                                                 │
+│ sha1                   │ 120ed9279d85cbfa56e5b7779ffa7162074f7a29                                                                         │
+│ sha256                 │ be22645c61949ad6a077373a7d6cd85e3fae44315632f161adc4c99d5a8e6844                                                 │
+│ analysis               │ static                                                                                                           │
+│ os                     │ windows                                                                                                          │
+│ format                 │ pe                                                                                                               │
+│ arch                   │ i386                                                                                                             │
+│ path                   │ C:/Users/Administrator/Desktop/GIT/wannacry/be22645c61949ad6a077373a7d6cd85e3fae44315632f161adc4c99d5a8e6844.exe │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ ATT&CK Tactic          │ ATT&CK Technique                                                                   │
+┝━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ DEFENSE EVASION        │ Obfuscated Files or Information T1027                                              │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY              │ File and Directory Discovery T1083                                                 │
+├────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┤
+│ EXECUTION              │ Shared Modules T1129                                                               │
+┕━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ MBC Objective               │ MBC Behavior                                                                  │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ COMMUNICATION               │ Socket Communication::Initialize Winsock Library [C0001.009]                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ CRYPTOGRAPHY                │ Decrypt Data [C0031]                                                          │
+│                             │ Encrypt Data [C0027]                                                          │
+│                             │ Encrypt Data::AES [C0027.001]                                                 │
+│                             │ Encrypt Data::RC4 [C0027.009]                                                 │
+│                             │ Encryption Key [C0028]                                                        │
+│                             │ Encryption Key::RC4 KSA [C0028.002]                                           │
+│                             │ Generate Pseudo-random Sequence [C0021]                                       │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DATA                        │ Checksum::CRC32 [C0032.001]                                                   │
+│                             │ Compression Library [C0060]                                                   │
+│                             │ Encode Data::XOR [C0026.002]                                                  │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DEFENSE EVASION             │ Obfuscated Files or Information::Encoding-Standard Algorithm [E1027.m02]      │
+│                             │ Obfuscated Files or Information::Encryption-Standard Algorithm [E1027.m05]    │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                   │ Code Discovery::Enumerate PE Sections [B0046.001]                             │
+│                             │ File and Directory Discovery [E1083]                                          │
+├─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────┤
+│ FILE SYSTEM                 │ Create Directory [C0046]                                                      │
+│                             │ Get File Attributes [C0049]                                                   │
+│                             │ Read File [C0051]                                                             │
+│                             │ Writes File [C0052]                                                           │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+│ Capability                                           │ Namespace                                            │
+┝━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥
+│ initialize Winsock library                           │ communication/socket                                 │
+│ hash data with CRC32 (2 matches)                     │ data-manipulation/checksum/crc32                     │
+│ encode data using XOR (15 matches)                   │ data-manipulation/encoding/xor                       │
+│ create new key via CryptAcquireContext               │ data-manipulation/encryption                         │
+│ encrypt or decrypt via WinCrypt                      │ data-manipulation/encryption                         │
+│ encrypt data using AES (5 matches)                   │ data-manipulation/encryption/aes                     │
+│ reference AES constants (5 matches)                  │ data-manipulation/encryption/aes                     │
+│ encrypt data using RC4 KSA (3 matches)               │ data-manipulation/encryption/rc4                     │
+│ generate random numbers using the Delphi LCG         │ data-manipulation/prng/lcg                           │
+│ extract resource via kernel32 functions              │ executable/resource                                  │
+│ get common file path                                 │ host-interaction/file-system                         │
+│ set current directory                                │ host-interaction/file-system                         │
+│ create directory                                     │ host-interaction/file-system/create                  │
+│ check if file exists (2 matches)                     │ host-interaction/file-system/exists                  │
+│ get file attributes (3 matches)                      │ host-interaction/file-system/meta                    │
+│ get file size (2 matches)                            │ host-interaction/file-system/meta                    │
+│ read file on Windows (3 matches)                     │ host-interaction/file-system/read                    │
+│ write file on Windows                                │ host-interaction/file-system/write                   │
+│ linked against ZLIB                                  │ linking/static/zlib                                  │
+│ enumerate PE sections (2 matches)                    │ load-code/pe                                         │
+│ parse PE header                                      │ load-code/pe                                         │
+┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
