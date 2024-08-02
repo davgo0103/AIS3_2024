@@ -13,6 +13,8 @@
 - simnum.py 分析第二版，使用轉換為二進制格式的capa報告進行比較
 - simclus.py 分析最終版把畫圖的方法分離出來，不然每次都跑好久
   - draw.py 畫圖用的，只能搭配simclus.py產生的檔案畫圖
+    ![image](https://github.com/user-attachments/assets/d175d9fe-c4c8-4009-994f-5ca493632459)
+
  
 # 使用
 - 先下載惡意軟體後，再進行分析和比較畫圖。
