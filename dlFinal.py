@@ -9,7 +9,7 @@ from rich.progress import Progress
 
 api_key = '5188182ec7fb344237397805768b339b'
 api_url = 'https://mb-api.abuse.ch/api/v1/'
-dl_type = 'Emotet'
+dl_type = 'wannacry'
 destination_folder = f'./{dl_type}/'
 report_folder = f'./report/{dl_type}/'
 temp_dir = './temp/'

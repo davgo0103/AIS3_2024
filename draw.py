@@ -48,7 +48,7 @@ def visualize_similarity_umap_with_clusters(similarity_matrix, features, n_clust
         for sample_id in highlight_samples:
             if sample_id in features:
                 sample_index = list(features.keys()).index(sample_id)
-                plt.scatter(df_umap.iloc[sample_index]['umap1'], df_umap.iloc[sample_index]['umap2'], color='red', marker='*', s=200, label=sample_id)
+                plt.scatter(df_umap.iloc[sample_index]['umap1'], df_umap.iloc[sample_index]['umap2'], color='red', marker='*', s=200)
                 plt.text(df_umap.iloc[sample_index]['umap1'], df_umap.iloc[sample_index]['umap2'], sample_id, fontsize=9, weight='bold')
 
     plt.title(f'UMAP Visualization of Sample Similarity with KMeans Clusters (n_clusters={n_clusters})')
@@ -59,7 +59,7 @@ def visualize_similarity_umap_with_clusters(similarity_matrix, features, n_clust
 similarity_matrix, features = load_similarity_and_features()
 
 # 需要標注的樣本ID列表
-highlight_samples = ['unknow']
+highlight_samples = ['unknow', 'main']
 
 # 使用 UMAP 進行視覺化
-visualize_similarity_umap_with_clusters(similarity_matrix, features, n_clusters=6, highlight_samples=highlight_samples)
+visualize_similarity_umap_with_clusters(similarity_matrix, features, n_clusters=3, highlight_samples=highlight_samples)
