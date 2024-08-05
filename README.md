@@ -1,6 +1,8 @@
 >[!CAUTION]
->執行部分程式會讓你的電腦充滿各種惡意軟體，請小心使用!
+>執行部分程式會讓你的電腦充滿各種惡意軟體，請小心使用!<br>
 >出事本人不負責
+>Running certain programs may fill your computer with various types of malware.
+>Please use caution! I will not be responsible if anything goes wrong.
 
 
 # 說明
