@@ -20,6 +20,10 @@
   - draw.py 畫圖用的，只能搭配simclus.py產生的檔案畫圖
     ![image](https://github.com/user-attachments/assets/d175d9fe-c4c8-4009-994f-5ca493632459)
 
+  - final
+    ![image](https://github.com/user-attachments/assets/37d9086d-dd4a-4835-8a0b-7053c6f6f9dc)
+
+
  
 # 使用
 - 先下載惡意軟體後，再進行分析和比較畫圖。
